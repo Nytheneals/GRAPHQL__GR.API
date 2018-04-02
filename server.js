@@ -18,7 +18,8 @@ const app = express();
 app.use(
   "/graphql",
   graphqlHTTP({
-    schema
+    schema,
+    graphiql: true
   })
 );
 // LISTENING TO OUR SERVER FOR ANY CHANGES OR REQUESTS
